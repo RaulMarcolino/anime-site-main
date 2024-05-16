@@ -139,106 +139,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-1.jpg">
-                                        <div class="ep">9 Temp.</div>
-                                        <div class="comment"><i class="fa fa-comments"></i>5500</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 50543</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Ação</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">Boruto: Naruto Next Generations</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-2.jpg">
-                                        <div class="ep">1 Temp.</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 10</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 8502</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Música</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">Ensemble Stars!</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-3.jpg">
-                                        <div class="ep">1 Temp.</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 15</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 6783</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Ação</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">ID: Invaded</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-4.jpg">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i>12567</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Ficção</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">Kaijuu No Kodomo</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-5.jpg">
-                                        <div class="ep">2 Temp.</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 18</div>
-                                        <div class="view"><i class="fa fa-eye"></i>6423</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Aventura</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">Made in Abyss: Journey's Down</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-6.jpg">
-                                        <div class="ep">4 Temp.</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i>6859</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Aventura</li>
-                                            <li>Série</li>
-                                        </ul>
-                                        <h5><a href="#">Sword Art Online</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular__product">
-                        <div class="row">
+                            <?php
+                            $rs = $con->query("SELECT * FROM animes")
+                            
+                            ?>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
                                     <h4>Populares</h4>
@@ -470,7 +374,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                                    <a href="#" class="primary-btn">Ver Tudo <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -578,44 +482,44 @@
                     <div class="product__sidebar">
                         <div class="product__sidebar__view">
                             <div class="section-title">
-                                <h5>Top Views</h5>
+                                <h5>Mais Vistos</h5>
                             </div>
                             <ul class="filter__controls">
-                                <li class="active" data-filter="*">Day</li>
-                                <li data-filter=".week">Week</li>
-                                <li data-filter=".month">Month</li>
-                                <li data-filter=".years">Years</li>
+                                <li class="active" data-filter="*">do Dia</li>
+                                <li data-filter=".week">da Semana</li>
+                                <li data-filter=".month">do Mês</li>
+                                <li data-filter=".years">do Ano</li>
                             </ul>
                             <div class="filter__gallery">
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                 data-setbg="img/sidebar/tv-1.jpg">
-                                <div class="ep">18 / ?</div>
-                                <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                <h5><a href="#">Boruto: Naruto next generations</a></h5>
+                                <div class="ep">9 Temp.</div>
+                                <div class="view"><i class="fa fa-eye"></i>50543</div>
+                                <h5><a href="#">Boruto: Naruto Next Generations</a></h5>
                             </div>
                             <div class="product__sidebar__view__item set-bg mix month week"
                             data-setbg="img/sidebar/tv-2.jpg">
-                            <div class="ep">18 / ?</div>
-                            <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                            <div class="ep">1 Temp.</div>
+                            <div class="view"><i class="fa fa-eye"></i>6783</div>
+                            <h5><a href="#">ID: Invaded</a></h5>
                         </div>
                         <div class="product__sidebar__view__item set-bg mix week years"
                         data-setbg="img/sidebar/tv-3.jpg">
-                        <div class="ep">18 / ?</div>
-                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                        <h5><a href="#">Sword art online alicization war of underworld</a></h5>
+                        <div class="ep">4 Temp.</div>
+                        <div class="view"><i class="fa fa-eye"></i>6859</div>
+                        <h5><a href="#">Sword Art Online</a></h5>
                     </div>
                     <div class="product__sidebar__view__item set-bg mix years month"
                     data-setbg="img/sidebar/tv-4.jpg">
-                    <div class="ep">18 / ?</div>
-                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                    <h5><a href="#">Fate/stay night: Heaven's Feel I. presage flower</a></h5>
+                    <div class="ep">2h</div>
+                    <div class="view"><i class="fa fa-eye"></i>6346</div>
+                    <h5><a href="#">Fate/Stay Night: Heaven’s Feel I. Presage Flower</a></h5>
                 </div>
                 <div class="product__sidebar__view__item set-bg mix day"
                 data-setbg="img/sidebar/tv-5.jpg">
-                <div class="ep">18 / ?</div>
-                <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                <h5><a href="#">Fate stay night unlimited blade works</a></h5>
+                <div class="ep">2 Temp.</div>
+                <div class="view"><i class="fa fa-eye"></i> 12426</div>
+                <h5><a href="#">Fate Stay Night: Unlimited Blade Works</a></h5>
             </div>
         </div>
     </div>
@@ -629,11 +533,11 @@
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
-                    <li>Active</li>
-                    <li>Movie</li>
+                    <li>Aventura</li>
+                    <li>Série</li>
                 </ul>
                 <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
-                <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                <span><i class="fa fa-eye"></i> 9.978 Visualizações</span>
             </div>
         </div>
         <div class="product__sidebar__comment__item">
@@ -642,11 +546,11 @@
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
-                    <li>Active</li>
-                    <li>Movie</li>
+                    <li>Aventura</li>
+                    <li>Filme</li>
                 </ul>
                 <h5><a href="#">Shirogane Tamashii hen Kouhan sen</a></h5>
-                <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                <span><i class="fa fa-eye"></i> 19.534 Visualizações</span>
             </div>
         </div>
         <div class="product__sidebar__comment__item">
@@ -655,11 +559,11 @@
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
-                    <li>Active</li>
-                    <li>Movie</li>
+                    <li>Ação</li>
+                    <li>Série</li>
                 </ul>
                 <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
-                <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                <span><i class="fa fa-eye"></i> 19.141 Visualizações</span>
             </div>
         </div>
         <div class="product__sidebar__comment__item">
@@ -668,11 +572,11 @@
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
-                    <li>Active</li>
-                    <li>Movie</li>
+                    <li>Ação</li>
+                    <li>Série</li>
                 </ul>
-                <h5><a href="#">Monogatari Series: Second Season</a></h5>
-                <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                <h5><a href="#">Boruto: Naruto Next Generations</a></h5>
+                <span><i class="fa fa-eye"></i> 50543 Visualizações</span>
             </div>
         </div>
     </div>
@@ -698,16 +602,16 @@
             <div class="col-lg-6">
                 <div class="footer__nav">
                     <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./blog.html">Our Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li class="active"><a href="./index.html">Início</a></li>
+                        <li><a href="./categories.html">Categorias</a></li>
+                        <li><a href="./blog.html">Nosso Blog</a></li>
+                        <li><a href="#">Contatos</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os Direitos Reservados
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
               </div>
@@ -721,7 +625,7 @@
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch"><i class="icon_close"></i></div>
         <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here.....">
+            <input type="text" id="search-input" placeholder="Pesquise aqui...">
         </form>
     </div>
 </div>
